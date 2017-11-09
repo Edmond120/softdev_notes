@@ -1,0 +1,2 @@
+404 - webpage not found
+405 - method not allowed

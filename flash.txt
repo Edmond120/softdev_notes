@@ -1,0 +1,3 @@
+flash
+	flask function that sends a special messag3e with the next respose made by the flask app.
+	flash(<MESSAGE>)

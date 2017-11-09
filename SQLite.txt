@@ -1,0 +1,88 @@
+SQLite
+	SQL implementation that relies entirely on function calls in the parent program. There is no database server.
+	
+	All database information is stored in a single file.
+	
+	Data is dynamically typed as values are inserted into a table.
+
+SQLITE Shell commands
+	.help
+	.quit
+	.tables
+	.header on|off
+	.mode column|csv|list|html
+
+SQL Commands
+	CREATE TABLE
+	
+	Add a table to a database
+	
+	CREATE TABLE <name> (<field name> <data type>, ...);
+
+		The data type will help to convert entered values to a suggested type.
+
+		TEXT, INTEGER, REAL, NUMERIC, BLOB
+
+		NUMERIC will default to an integer, but can be a floating point. 
+
+		BLOB means no suggested type.
+		Fields can be given a PRIMARY KEY attribute, denoting that every entry in that field is unique and cannot be NULL
+
+		Fields can be given a NOT NULL attribute, denoting that no entry can be NULL.
+	
+		CREATE TABLE red_group (name TEXT, id INTEGER PRIMARY KEY);
+
+	INSERT INTO
+
+		Insert a record into a table.
+
+		INSERT INTO <name> VALUES ( <field 1>, <field 2>, ...);
+
+			Will add a record to a table matching the values to the columns in order.
+			
+			NULL can be used to any entry.
+
+	SELECT <column 1>, ... FROM <table 1>, ...;
+	
+		Will return a new table containing only the requested columns from the requestred tables.
+
+		SELECT name FROM students;
+
+		
+	WHERE
+
+		Allows you to put restrictions on the results of a SELECT statement.
+
+		SELECT * from courses WHERE mark < 65
+
+	UPDATE
+		Change a record
+
+		UPDATE <table> SET <field> = <value> WHERE <condition>;
+
+python sqlite module
+	import sqlite3
+
+	connect
+		open/create an sqlite database.
+
+		If the database does not exists, creates it.
+
+		db = sqlite3.connect(<db name>)
+
+	cursor
+		create a database cursor object that will allow you to perform operations of the database.
+
+		c = db.cursor()
+	
+	execute
+		Cursor method to petrform the provided SQL operation, given as a string
+
+		c.execute(<SQL statement>)
+
+	commit
+		Database method to save chagnes to the db
+
+		db.commit()
+
+	db.close()

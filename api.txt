@@ -1,0 +1,24 @@
+REST APIs
+
+	API (Appication Program Interface)
+
+		A published set of protocols that can be used to have your program
+		interact with another program/service
+	
+	REST (REpresentational State Transfer)
+
+		APIs that transmit data back after receiving an http[s] GET
+		request.
+
+		Returned data can be in various formates, most common are html,
+		xml, and json.
+
+	JSON (JavaScript Object Notation)
+		Standard way of representing data. Can be easily translated into
+		python dictionary
+
+	Making and parsing a REST call in Python
+		urllib2
+			library to handle urls
+			.urlopen
+				u = urllib2.urlopen(<url>)

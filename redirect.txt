@@ -1,0 +1,5 @@
+redirect
+	
+	Flask function that will redirect you to another url
+	
+	redirect(<url>)

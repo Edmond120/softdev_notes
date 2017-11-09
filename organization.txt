@@ -1,0 +1,6 @@
+<flask-app> Organization
+	<APP>.py        the flask application
+	templates/      all your templates *
+        static/         static files (images, css, javascript, etc.)*
+        utils/		extra python modules
+	data/		data files
