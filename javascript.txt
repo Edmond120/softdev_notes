@@ -1,0 +1,9 @@
+Javascript 
+
+	Programming language originally designed to augment html and
+	be run locally on a web browser.
+
+	No direct relationship with java, though both have similar syntax.
+	(c-style syntax)
+
+	Functional programming language
