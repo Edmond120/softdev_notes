@@ -7,3 +7,6 @@ Javascript
 	(c-style syntax)
 
 	Functional programming language
+
+	Dynamically typed - variable types are provided at runtime (like python).
+	

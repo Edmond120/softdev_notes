@@ -1,0 +1,25 @@
+oVariable basics
+
+	All variables must be declared before being used.
+
+	All numbers are doubles.
+	
+	var x = 4;
+	
+	var b = true;
+
+	var s = "hello";
+		
+	var s = 'hello';
+
+	var l = [4,3,19]
+
+	var o = { 'a' : 10, 'x' : 'hello' };
+
+	
+Javascript functions
+	javasscript is functional. Like scheme (Racket)!
+
+	Functions are first class objects that can be used like any other value
+
+	
