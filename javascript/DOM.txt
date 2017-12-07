@@ -1,0 +1,31 @@
+Document Object Model (DOM)
+	
+	javascript derives most of its utility through being able to interact with html and xml documents.
+	
+	The DOM is an PI for interacting with html. It provides a sturture that we can interact with and can be manipulated by functions.
+	
+	Pages are represented as trees.
+
+	HTML elements are nodes in the page "tree"
+
+	DOM visualizer: https://software.hixie.ch/utilities/js/live-dom-viewer/
+
+	Selecting DOM elements in javascript
+
+		document.getElementById(<ID>)
+
+		document.getElementsByTagName(<TAG>) //returns list of elements
+
+		document.getElementsByClassName(<CLASS>) //returns list of elements
+
+		document.createElement( <HTML TAG NAME> )
+
+		ELEMENT.remove()
+
+		ELEMENT.innerHTML
+	
+		ELEMENT.appendChild( <ELEMENT> )
+
+		ELEMENT.setAttribute( <NAME>, <VALUE> )
+
+		ELEMENT.getAtrribute( <NAME> )
