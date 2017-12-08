@@ -1,0 +1,13 @@
+Callback function
+
+	Function that is passed as an argument to another function and intended 
+	to run at a specified moment (either due to an event or a timer).
+
+	When passing a callback as an argument, you should not call the function.
+	
+	Used extensively in javascript.
+
+ELEMENT.addEventListener(<EVENT>,<CALLBACK>)
+	
+	The callback function should take a single parameter taht will represent the 
+	triggering event when called.
