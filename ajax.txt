@@ -1,0 +1,42 @@
+AJAX
+	
+	Asynchronous Javascript And Xml
+
+	System created to send data to a server in the background of a page without having
+	to reload the page or wait for the server to acknowledge the change.
+
+	It is a combination of technology including javascript, html,DOM and XML.
+
+	AJAX calls can send data to s server using GET or POST, and then catch the data
+	sent by the server when it eventually responds (asynchronous).
+
+	Originally, XML was the only supported ormat for sending/receiving data, but now
+	many formats are used, including JSON and plain text.
+
+	AJAX calls can be made via the XMLHttpRequest javascript object
+
+Using jquery for AJAX
+
+	jquery is a javascript library that provides many wrappers for common javascript
+	actions.
+
+	Either download jquery or link to it via CDN in the <head> section of your html
+
+	$ is the symbol used to refer to the jquery library in code.
+
+	jquery ajax wrapper
+	
+		$.ajax( SETTINGS );
+
+		SETTINGS is an associative array (javascript object) containing the information
+		required to make the ajax call.
+		
+		Notable keys in SETTINGS
+
+			url: Server target link
+	
+			type: Method ("POST" OR "GET")
+
+			data: Data to be sent
+
+			success: callback function upon response from server
