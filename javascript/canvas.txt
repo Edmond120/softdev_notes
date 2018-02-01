@@ -1,0 +1,32 @@
+Canvasing the Area
+
+HTML5
+
+	Redesign of HTML with a focus on making the more "modern" features of web 
+	browsers easy to work with
+
+	Designed around javascript and a standarized DOM
+
+	Includes built in support for audio and video playback.
+
+		<audio> and <video>
+	
+	Canvas
+
+		HTML5 element that provides a drawing area.
+
+		Javascript functions can draw onto a canvas element.
+			
+			You must declare in what context you are drawing in
+			ex. 2d,3d, raw bitmap rendering
+
+		Basic canvas operation
+
+		HTML
+	
+			<canvas height="500" width="500" id="slate">
+
+				Any text there is only displayed if the canvas element is not
+				recognized by the browser.
+
+			</canvas>
