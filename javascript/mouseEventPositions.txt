@@ -1,0 +1,28 @@
+Mouse Event Positions
+
+	offsetX, offsetY
+		Position of the mouse relative to the triggered element.
+
+	clientX, clientY
+		Position relative to the currently viewable content.
+
+	pageX, pageY
+		Position relative to the entire page (including non-visible content).
+
+	screenX, screenY
+		Position relative to the computer screen.
+
+
+More path functions
+
+	moveTo(X, Y)
+		Moves the path to position (x, y), will not result in a line or a filled in 
+		section after stroke() and fill()
+
+	lineTo(X, Y)
+		Moves the path to position (x,y), will result in a line and a filled in 
+		section after stroke(0 and fill()
+
+	closePath()
+		Adds the point at the current beginning of the path to the path that will result
+		in a drawn line and/or filled area.
