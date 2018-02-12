@@ -1,0 +1,25 @@
+NoSQL Databases:
+	Non table-based (relational) databases.
+
+	Relational databases (perhaps not SQL based) are the most commonly used,
+	but NoSQL have become more popular with the advancement of the 21st century web 
+	applications and big data.
+
+	Examples:
+		Key-Value: Database is essentially a large dictionary.
+	
+	Graph: Database is stored as a graph, where relationships between the data nodes
+		are essential to the database schema.
+
+	Document: Database is a collection of documents, which can contain various amounts
+		and types of data.
+		
+		A single record in a document database is a document.
+
+		Documents contain fields and values (like a dictionary)
+
+		You do not need to specify types for the values.
+
+		A group of documents is put into a collection.
+
+		Documents do not need to be stored on the same storage device.
