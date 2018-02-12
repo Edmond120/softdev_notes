@@ -1,0 +1,19 @@
+window.setInterval(func, time)
+	js function that calls func every time milliseconds.
+
+window.requestAnimationFrame( func )
+
+	Tells the browser to run func before drawing the next frame.
+
+	The browser will attempt to run ~60 frames per second.
+
+	Lets the browser handle when the code should be executed (as opposed to 
+	setInterval) which is based on time)
+
+	Lets the browser pause animation when a page is not in the foreground.
+
+	Returns a number "request ID" for ftame that will be drawn
+
+window.cancelAnimationFrame(requestID)
+
+	cancels the drawing of the frame associated with requestID

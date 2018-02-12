@@ -20,6 +20,8 @@ HTML5
 			You must declare in what context you are drawing in
 			ex. 2d,3d, raw bitmap rendering
 
+			ex. canvas.getContext("2d")
+
 		Basic canvas operation
 
 		HTML
