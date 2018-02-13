@@ -1,0 +1,62 @@
+MongoDB:
+	-Uses a separate database server
+	-mongod server process runs on one machine
+	-mongo client processes run on several machines & can w/ server
+	-Libraries for languages to communicate w/mongo (pymongo)
+	-camelCase
+
+Using the Mongo Shell:
+	Connecting:
+		$ mongo <server>
+
+		server should be an IP address.
+
+	Shell Commands:
+		db:
+			shows what db you are in
+		show dbs:
+			shows the dbs and their sizes
+		show collections:
+			shows the collections in the db
+		use <x>:
+			"cd" into x
+		
+	Inserting a document:
+		db.<collection>.insert(document)
+
+		Add document to <collection>. Will create <collection> if it doesn't exist.
+		
+	Removing a collection:
+		db.<collection>.drop()
+	
+	Removing a database:
+		db.dropDatabase()
+
+		removes the current database
+
+	Querying MongoDB:
+		db.<collection>.find( query document )
+
+		  query documents define a database query
+
+		    { query key : desired value }
+
+		  This query documents can find all values where name is 'bob'
+
+		    { 'name' : 'bob' }
+
+		Comparison operators:
+			Comparison operators are dictionaries that modify the value of the query
+			document.
+
+			  < → $lt, <= → $lte, > → $gt, >= → $gte, != → $ne, = → $eq
+
+			  { "id" : {$lt : 400} }
+
+		Logical operators:
+			$and
+			$not
+			$or
+			$nor
+
+			Joins comparison operation dictionaries
