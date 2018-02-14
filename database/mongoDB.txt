@@ -58,5 +58,7 @@ Using the Mongo Shell:
 			$not
 			$or
 			$nor
-
+			
 			Joins comparison operation dictionaries
+
+			{$and : [ query document, another query document ] }
