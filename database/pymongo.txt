@@ -1,0 +1,26 @@
+pymongo:
+
+	MongoClient:
+		Class interface for MongoDB
+
+		Connecting to a MongoDB server:
+
+			connection = pymongo.MongoClient(server)
+
+			server is a string.
+
+		Databases and collections can be accessed using [] or . :
+
+			db = connection['test']          db = connection.test
+
+			collection = db['restaurant']    collection = db.restaurant
+
+		Querying in pymongo:
+
+			<collection>.find_one( query document) :
+
+				Returns the first document that matches the query document.
+
+			<collection>.find( query document) :
+
+				Returns a cursor that can iterate over all the documents matching the query document.
