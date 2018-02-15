@@ -62,3 +62,19 @@ Using the Mongo Shell:
 			Joins comparison operation dictionaries
 
 			{$and : [ query document, another query document ] }
+
+	Adding databases, collections, documents:
+
+		There is not specific command for creating databases and collections.
+
+		Once a document is added to a collection, the associated database and collection are created if they did not already exist.
+
+		<collection>.insert_one( document ) :
+
+			Add document to collection.
+
+			_id will be created by mongo for the document
+
+		<collection>.insert_many( document list ) :
+
+			Add each document in document list in collection.
