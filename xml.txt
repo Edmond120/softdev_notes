@@ -1,0 +1,13 @@
+XML:
+	eXtensible Markup Language
+
+	It is not a formatting language (like HTML)
+
+	A framework for creating markup based grammars
+
+	Uses some of the syntactic standards of HTML, like tags and attributes,
+	with a focus on storing and representing data instead of rendering and
+	displaying it.
+
+	An XML namespace is defined by the tags and attributes associated with
+	specific XML language.
