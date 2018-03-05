@@ -6,6 +6,7 @@ SVG (Scalable Vector Graphics):
 	but instead as a list of drawing commands (like line, circle, rectangle, curve, ...)
 
 <svg> element:
+
 	The <svg> element is designed to store SVG code (that is, SVG XML elements)
 	```
 	<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500">
@@ -15,3 +16,31 @@ SVG (Scalable Vector Graphics):
 	</svg>
 	```
 	xmlns is just the namespace, IT IS NOT A LINK, the name could be anything
+
+Some SVG Shapes:
+
+	<rect>:
+		Attributes: x, y, width, height
+
+Creating SVG elements in javascript:
+	```
+	document.createElementNS( <NAMESPACE>, <ELEMENT> );
+	```
+	Creates an element from a specified XML namespace
+
+	svg example:
+		```
+		var c1 = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+		```
+
+	Once created, you can modify it with setAttribute calls
+
+		```
+		c1.setAttribute("cx","200");
+		```
+
+	To add the element to your svg container, use the appendChild function
+		```
+		var pic = document.getElementsById("svg_id");
+		pic.appendChild( c1 ):
+		```
