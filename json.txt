@@ -1,0 +1,31 @@
+JSON:
+	JSON stands for Javascript Object Notation
+
+	They are storied much like python dictionaries, but are called associative arrays
+	but I will be calling them dictionaries because it makes things easier
+
+	Examples:
+		```
+		var o = {
+			x: 4,
+			y: 16,
+
+			print: function(){
+				console.log(this.x + ' ' + this.y)
+			},
+		};
+		```
+		note that in the function, this refers to the dictionary
+
+		```
+		var newObj = function(x, y) {
+			var obj = {
+				x: x,
+				y: y,
+
+				print: function(){
+					console.log(this.x + ' ' + this.y)
+				},
+			};
+		};
+		```
