@@ -1,0 +1,34 @@
+List comprehensions:
+
+	Programming construct for building lists from existing ones.
+
+	Python Syntax:
+
+		[ value for var in list ]
+
+		is equivalent to
+		```
+		for var in list
+			new_list.append(value)
+		```
+		Conditional Comprehensions:
+
+			[ value for var in list if condition ]
+
+			is equivalent to
+			```
+			for var in list:
+				if(condition):
+					new_list.append(value)
+			```
+
+		Nexted Comprehensions:
+
+			[ value for var1 in list1 for var2 in list2 ]
+
+			is equivalent to
+			```
+			for var1 in list1:
+				for var2 in list2:
+					new_list.append(value)
+			```
