@@ -1,0 +1,31 @@
+map/filter:
+
+	Programming structures designed to manipulate lists.
+
+	map:
+		create a list by applying a function to each element in an existing list.
+		map(<function>,<list>)
+
+	filter:
+		create a list by filtering out elements of an existing list
+		filter(<function>,<list>)
+
+	reduce:
+		compute a single balue basedo n a list (i.e. reduce a list to a value)
+		reduce(<function>,<list>)
+
+lambda expressions:
+
+	Anonymous function creation in python.
+
+		Similar to lambda in racket and function in javascript.
+
+	Syntax:
+
+		lambda <arguments> : <expression>
+
+			Expression must return some value. because of this,
+			return is not used.
+
+		ex.
+			lambda x : 2 * x
