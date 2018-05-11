@@ -1,0 +1,49 @@
+Every web app we've designed has used Flask's built in web server.
+This has worked well fro development and debugging, but there are serious
+drawbacks to using it as the full-time server for a live website.
+
+Reasons why flask should not be used as a production web server:
+
+	The webserver is *_single-threaded._* This means all requests (including
+	html, css, js, images, ajax calls...) are handled sequentially. Every visitor
+	to your site has to wait for any previous requests to resolve before theirs.
+
+	It is not designed to protect your application and server machine from malicious
+	attacks.
+
+	It is not designed to be a long term high volume server, and could fail for
+	various reasons while the site is live.
+
+Production webs servers are designed to handle large number of requests.
+Commonly this is done by using separate processes or threads for each request.
+These processes/threads are often called *_workers_*.
+
+Production servers also can run multiple sites using different domain names on the
+same machine.
+
+Common production servers:
+
+	Apache2:
+		Each unique site (distinct domain name) is a *_Virtual Host_*.
+
+		All processes have run under the username and group: *_www-data_*.
+			This is important fi your app creates/writes/modifies local files.
+
+		Configuration files livei n /detc/apache2/
+
+		websites live in /var/www/
+
+	nginx:
+
+	green unicorn:
+		This is a lightweight webs server that requires little in the way of 
+		configuration, it is not as robust as apache2 or nginx.
+
+Using Apache2 with Flask:
+
+	We want Apache2 to be our web server, but we still want to use our flask
+	code as our site backend.
+
+	Web Server Gateway Interface (WSGI) is a convention -set of common function
+	names- that alloows conventional web servers to forward requests to python
+	based frameworks and applications.
