@@ -47,3 +47,18 @@ Using Apache2 with Flask:
 	Web Server Gateway Interface (WSGI) is a convention -set of common function
 	names- that alloows conventional web servers to forward requests to python
 	based frameworks and applications.
+
+Apache2 Server setup using ubuntu 16.0.4:
+
+	1. Install apache2:
+		```
+		$ sudo apt-get install apache2
+		```
+		(always run $sudo apt-get update before installing anything)
+
+	2. Install & Enable mod_wsgi:
+		```
+		$ sudo apt-get install libapache2-mod-wsgi
+		$ sudo a2enmod wsgi
+		$ sudo service apache2
+		```
