@@ -62,3 +62,28 @@ Apache2 Server setup using ubuntu 16.0.4:
 		$ sudo a2enmod wsgi
 		$ sudo service apache2
 		```
+
+	3. Apache site config file:
+		``
+		<VirtualHost *: 80>
+			ServerName <domain or IP>
+
+		WSGIScriptAlias / /var/www/<appname>/<appname>.wsgi
+
+		<Directory /var/www/<appname>/<appname>/>
+			Order allow,deny
+			Allow from all
+		</Directory>
+
+		Alias /static /var/www/<appname>/<appname>/static>
+		<Directory /var/www/<appname>/<appname>/static>
+			Order allow,deny
+			Allow from all
+		</Directory>
+		</VirtualHost>
+		``
+		enable site and run:
+			```
+			sudo a2ensite <appname>
+			sudo service apache2 restart
+			```
