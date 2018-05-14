@@ -1,0 +1,30 @@
+1. WSGI setup
+
+	File organization:
+
+		Rename your flask app file to __init__.py
+
+		Make sure your entrie flask structure is in a single named after your app.
+
+		Put that directory in another directory with the same name.
+
+		In that directory, create a file called <appname>.wsgi
+
+		Example directory structure:
+			``
+			66gallery/
+				66gallery.wsgi
+				66.gallery/
+					__init__.py
+					static/
+					templates/
+					utils/
+			``
+
+	WSGI file setup:
+		```
+		#!/usr/bin/python
+		import sys
+		sys.path.insert(0,"/var/www/66/gallery/")
+		from 66gallery import app as application
+		```
